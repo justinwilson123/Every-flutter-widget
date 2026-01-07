@@ -24,6 +24,7 @@ import 'package:all_widget/widget/vertical_divider_widget.dart';
 import 'package:all_widget/widget/visibilty_widget.dart';
 import 'package:flutter/material.dart';
 
+import 'widget/page_view_widget.dart';
 import 'widget/phsical_model_widget.dart';
 import 'widget/phsical_shape_widget.dart';
 
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: PhsicalModelWidget(),
+      home: PageViewWidget(),
     );
   }
 }
