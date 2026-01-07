@@ -24,6 +24,9 @@ import 'package:all_widget/widget/vertical_divider_widget.dart';
 import 'package:all_widget/widget/visibilty_widget.dart';
 import 'package:flutter/material.dart';
 
+import 'widget/phsical_model_widget.dart';
+import 'widget/phsical_shape_widget.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -37,7 +40,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: RawAutoCompleteWidget(),
+      home: PhsicalModelWidget(),
     );
   }
 }
