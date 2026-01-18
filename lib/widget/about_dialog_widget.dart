@@ -11,11 +11,16 @@ class AboutDialogWidget extends StatelessWidget {
         child: Center(
           child: ElevatedButton(
             onPressed: () {
-              AboutDialog(
-                applicationName: "About Dialog",
-                applicationVersion: "1.0.0",
-                applicationIcon: FlutterLogo(size: 100),
-                children: [Text("About Dialog")],
+              showDialog(
+                context: context,
+                builder: (context) {
+                  return AboutDialog(
+                    applicationName: "About Dialog",
+                    applicationVersion: "1.0.0",
+                    applicationIcon: FlutterLogo(size: 100),
+                    children: [Text("About Dialog")],
+                  );
+                },
               );
             },
             child: Text("About Dialog"),
