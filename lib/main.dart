@@ -32,6 +32,7 @@ import 'widget/alert_dialog_widget.dart';
 import 'widget/animated_align_widget.dart';
 import 'widget/animated_container_widget.dart';
 import 'widget/animated_cross_fade_widget.dart' show AnimatedCrossFadeWidget;
+import 'widget/animated_icon_widget.dart';
 import 'widget/orientation_builder_widget.dart';
 import 'widget/over_flow_box_widget.dart';
 import 'widget/overflow_bar_widget.dart';
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AnimatedCrossFadeWidget(),
+      home: AnimatedIconWidget(),
     );
   }
 }
