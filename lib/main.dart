@@ -1,4 +1,5 @@
 import 'package:all_widget/widget/align_widget.dart';
+import 'package:all_widget/widget/animated_builder_widget.dart';
 import 'package:all_widget/widget/place_holder_widget.dart';
 import 'package:all_widget/widget/popup_menu_button_widget.dart';
 import 'package:all_widget/widget/positioned_transition_widget.dart';
@@ -43,12 +44,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AnimatedAlignWidget(),
+      home: AnimatedBuilderWidget(),
     );
   }
 }

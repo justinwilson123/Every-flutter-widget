@@ -13,18 +13,16 @@ class _AnimatedAlignWidgetState extends State<AnimatedAlignWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: AnimatedAlign(
-          alignment: isSelcted ? Alignment.bottomRight : Alignment.topLeft,
-          duration: Duration(seconds: 1),
-          child: GestureDetector(
-            onTap: () {
-              setState(() {
-                isSelcted = !isSelcted;
-              });
-            },
-            child: Container(height: 200, width: 200, color: Colors.red),
-          ),
+      body: AnimatedAlign(
+        alignment: isSelcted ? Alignment.bottomRight : Alignment.topLeft,
+        duration: Duration(seconds: 1),
+        child: GestureDetector(
+          onTap: () {
+            setState(() {
+              isSelcted = !isSelcted;
+            });
+          },
+          child: Container(height: 200, width: 200, color: Colors.red),
         ),
       ),
     );
