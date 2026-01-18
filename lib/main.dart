@@ -26,6 +26,7 @@ import 'package:flutter/material.dart';
 
 import 'widget/about_dialog_widget.dart';
 import 'widget/about_list_tile_widget.dart';
+import 'widget/alert_dialog_widget.dart';
 import 'widget/orientation_builder_widget.dart';
 import 'widget/over_flow_box_widget.dart';
 import 'widget/overflow_bar_widget.dart';
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home: AboutListTileWidget(),
+      home: AlertDialogWidget(),
     );
   }
 }
