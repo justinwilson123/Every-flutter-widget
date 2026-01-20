@@ -42,8 +42,6 @@ class _AnimatedListWidgetState extends State<AnimatedListWidget> {
                 initialItemCount: _items.length,
                 itemBuilder: (context, index, animation) {
                   return SizeTransition(
-                    // axis: Axis.vertical,
-                    key: UniqueKey(),
                     sizeFactor: animation,
                     child: Card(
                       margin: EdgeInsets.all(10),
