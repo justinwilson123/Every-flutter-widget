@@ -1,6 +1,7 @@
 import 'package:all_widget/widget/align_widget.dart';
 import 'package:all_widget/widget/animated_builder_widget.dart';
 import 'package:all_widget/widget/animated_opacity_widget.dart';
+import 'package:all_widget/widget/animated_padding_widget.dart';
 import 'package:all_widget/widget/place_holder_widget.dart';
 import 'package:all_widget/widget/popup_menu_button_widget.dart';
 import 'package:all_widget/widget/positioned_transition_widget.dart';
@@ -55,7 +56,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AnimatedOpacityWidget(),
+      home: AnimatedPaddingWidget(),
     );
   }
 }
